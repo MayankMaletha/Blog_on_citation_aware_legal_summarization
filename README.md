@@ -1,2 +1,5 @@
-# Blog_on_citation_aware_legal_summarization
-A bilingual, citation-aware legal judgment summarization system for Indian courts using Legal-BERT, IndicTrans2, and mT5.
+# Bilingual Citation-Aware Legal Summarization Blog
+
+This repository contains the project blog explaining the concept, motivation, architecture, and working mechanism of the **Bilingual Citation-Aware Legal Summarization System** designed for Indian court judgments.  
+The blog highlights how the system extracts legal citations, preserves reasoning, and generates aligned English-Hindi summaries for inclusivity and accessibility.  
+You can view the live blog page via GitHub Pages after deployment.

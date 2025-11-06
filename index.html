@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bilingual Citation-Aware Legal Summarization System</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        background: linear-gradient(135deg, #e8ecff, #f4f7ff, #ffffff);
+        font-family: 'Source Serif Pro', serif;
+        color: #1e1e24;
+        overflow-x: hidden;
+    }
+
+    .wrapper {
+        max-width: 950px;
+        margin: 60px auto;
+        background: rgba(255,255,255,0.85);
+        backdrop-filter: blur(14px);
+        padding: 55px 50px;
+        border-radius: 18px;
+        box-shadow: 0 18px 60px rgba(0,0,0,0.15);
+        animation: fadeIn 1.3s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 42px;
+        text-align: center;
+        background: linear-gradient(90deg, #192a88, #6d84ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 0.5px;
+        margin-bottom: 8px;
+    }
+
+    .subtitle {
+        text-align: center;
+        font-size: 19px;
+        color: #4f4f66;
+        margin-bottom: 50px;
+    }
+
+    .section-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 28px;
+        margin-top: 65px;
+        padding-bottom: 10px;
+        border-bottom: 4px solid #6d84ff;
+        color: #182060;
+    }
+
+    p, li {
+        font-size: 19px;
+        line-height: 1.9;
+    }
+
+    ul { padding-left: 28px; }
+    li::marker { color: #182060; }
+
+    img {
+        display: block;
+        max-width: 100%;
+        margin: 45px auto;
+        border-radius: 16px;
+        border: 2px solid #e6e6fa;
+        box-shadow: 0 15px 45px rgba(0,0,0,0.18);
+        transition: 0.45s;
+    }
+
+    img:hover {
+        transform: scale(1.04);
+        box-shadow: 0 22px 55px rgba(0,0,0,0.28);
+    }
+
+    .highlight-box {
+        background: linear-gradient(135deg, #e7eaff, #f0f1ff);
+        padding: 22px 25px;
+        border-left: 8px solid #5062ff;
+        border-radius: 12px;
+        margin: 30px 0;
+        font-size: 19px;
+    }
+
+    pre {
+        background: #0f0f17;
+        padding: 18px;
+        color: #e6e6e6;
+        border-radius: 12px;
+        margin-top: 25px;
+        font-size: 17px;
+        overflow-x: auto;
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 65px;
+        font-size: 18px;
+        color: #333;
+        font-style: italic;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<body>
+
+<h1>Bilingual Citation-Aware Legal Summarization System for the Indian Judiciary</h1>
+
+<p>The Indian legal system is among the largest judicial systems of the world. Courts of the entire country throw out thousands of decisions, legal notices, case opinions, and orders daily. These papers taken together actually stand for decades of legal reasoning, change of interpretation, and of precedent which determine the manner in which law is administered now. </p>
+
+<p>Unfortunately, the size, the heaviness, and the difficulty of the legal language of these documents render them inaccessible to the general public. It is frequently the case that a legal judgment is a ten-to-hundred-page document, and it is replete with citations to earlier cases, articles of the constitution, and interpretational discussions. Getting to the bottom of such documents is a lengthy affair requiring special instruction and acquaintance with legal jargon, and thus it is a privilege that not all are entitled to. </p>
+
+<p>Things get even more complicated with India as legal documents are generally bilingual in English and Hindi. Lawyers, judges, students, and even the citizens who want to know their rights may confront linguistic barriers and may find it difficult to understand the content fully. </p>
+
+<p><strong>That's precisely what my project is for.</strong></p>
+
+<p>I am developing a Citation-Aware Bilingual Legal Document Summarization System that can: </p>
+<ul>
+<li>•	Recognize and extract important legal concepts from a legal document in either Hindi or English; </li>
+<li>•	Recognize and interpret legal citations and references; </li>
+<li>Produce accurate summaries in both English and Hindi</li>
+<li>Preserve legal reasoning instead of shortening text blindly</li>
+</ul>
+
+<p>This system aims to make legal knowledge more <strong>accessible, comprehensible, and inclusive.</strong></p>
+
+<div class="section-title">Why This Problem Matters</div>
+
+<p>Legal research in India is hard.
+If you are a lawyer getting ready for a hearing, a law student studying case law, or a policymaker analyzing legal results — you have to read and interpret multiple judgments. Often, this work takes many hours of reading carefully, making notes, and checking legal citations.
+</p>
+
+<p>Some of the common problems that are faced today are:</p>
+<ul>
+<li>Judgments are very lengthy and sometimes insipidly repetitive.</li>
+<li>It is not always possible to find summaries, or the summaries may be too brief to be of any use.
+</li>
+<li>Citations to the law are given without any help from the text — you get (2010) 3 SCC 45, but have to look for the explanation separately to know why it is important.</li>
+<li>A great number of learners are coming from Hindi medium or regional language schools, and that is why English only legal documents are hard for them to understand.</li>
+<li>It takes time and a person must be trained in law if he is to be able to extract the key issues, arguments, decisions, and reasoning from a text.</li>
+</ul>
+
+<p>The point is that it is not a question of whether one can get hold of the texts of judgments – it is a question of whether one can get hold of the understanding.</p>
+
+<p><strong>Artificial Intelligence (AI)</strong> can play a transformative role here.
+But only if we design AI systems that respect legal rules, reasoning, and structure, not generic summarization techniques.
+</p>
+<div class="section-title">System Architecture</div>
+
+<!-- ✅ INSERT YOUR PIPELINE IMAGE HERE -->
+<img src="pipeline.png" alt="Bilingual Legal Summarization Pipeline">
+
+<p>The system works as a multi-stage pipeline:</p>
+
+<ol>
+<li><strong>Input Stage</strong></li>
+<li><strong>Language Detection & Translation (IndicTrans2)</strong></li>
+<li><strong>Legal NER & Citation Extraction (Legal-BERT + Regex)</strong></li>
+<li><strong>Citation-Aware Context Builder</strong></li>
+<li><strong>Citation-Guided Summarization (mT5 Fine-Tuned)</strong></li>
+<li><strong>Bilingual Alignment Translation</strong></li>
+<li><strong>Structured JSON Output</strong></li>
+</ol>
+
+<div class="section-title">1️⃣ Input Stage</div>
+
+<p>The system takes documents from:</p>
+<ul>
+<li>Indian Kanoon</li>
+<li>Supreme Court & High Court websites</li>
+<li>Manupatra, SCC Online, open legal research portals</li>
+<li>University and institutional law repositories</li>
+<li>Uploaded PDF or plain text files</li>
+</ul>
+
+<p>Documents can either be in English or Hindi.
+The point was to unify the document before the system could work with it.
+</p>
+
+<div class="section-title">2️⃣ Language Detection & Translation (IndicTrans2)</div>
+
+<p>As court decisions might be in either of the two languages, the system does:</p>
+<ul>
+<li>Identification of the language</li>
+<li>If the language is Hindi → change it into English (for standard handling)</li>
+<li>If the language is English → continue with the processing</li>
+</ul>
+
+<p>We are working with IndicTrans2, which is a model specifically designed for Indian languages. So the system guarantees:</p>
+
+<ul>
+<li>Legal terms are kept</li>
+<li>The meaning of a sentence is the same</li>
+<li>The format does not interfere with the logic</li>
+</ul>
+<p>This phase is about making sure that all other AI models used later have the same input.</p>
+
+<div class="section-title">3️⃣ Legal NER & Citation Extraction (Legal-BERT + Regex)</div>
+
+<p>This is the point where the machine-readable text starts to look like a legal document.<br>
+By means of Legal-BERT, a transformer model, which is trained on Indian legal texts, the system identifies:<br>
+Entity Examples<br>
+Case Title Ram Singh vs State of MP<br>
+Parties Petitioner, Respondent<br>
+Courts Supreme Court, Allahabad High Court<br>
+Statutory References Section 302 IPC, Article 21 of Constitution<br>
+Judges Hon’ble Justice XYZ<br>
+Besides that, we get a few examples of citation references like:<br>
+</p>
+
+<ul>
+<li><strong>Case Title:</strong> e.g., Ram Singh vs State of MP</li>
+<li><strong>Parties:</strong> Petitioner, Respondent</li>
+<li><strong>Court Name:</strong> Supreme Court, Allahabad High Court</li>
+<li><strong>Statutory Sections:</strong> Section 302 IPC, Article 21 of Constitution</li>
+<li><strong>Judges’ Names</strong></li>
+</ul>
+
+<p>Then, using citation regex matching, it extracts references such as:</p>
+<ul>
+<li>(1998) 3 SCC 450</li>
+<li>AIR 2001 SC 3456</li>
+<li>Cr.A No. 512 of 2019</li>
+</ul>
+
+<p>Citations are very important because legal arguments are based on what has been decided earlier.</p>
+
+<div class="section-title">4️⃣ Citation-Aware Context Builder (Novel Layer)</div>
+
+<p>Normal summarizers leave out the reasons for a court decision.<br>
+However, law is not just facts → it is reasoning.
+</p>
+
+<p>This element:</p>
+<ul>
+<li>Determines the paragraphs close to each important citation
+</li>
+<li>Gets the reasoning sentences</li>
+<li>Removes the irrelevant descriptive and procedural text</li>
+<li>Marks the sections of the Acts and the legal concepts</li>
+</ul>
+
+<p>This means that the summarizing tool does not give the same weight to all sentences - it concentrates on the portions that have legal significance.</p>
+
+<div class="section-title">5️⃣ Citation-Guided Summarization (mT5 Fine-Tuned)</div>
+
+<p>Most summarization systems shorten text but lose meaning.
+Our summarization model: Is based on mT5,Fine-tuned on Indian legal judgments,Gives special emphasis to reasoning linked to citations
+</p>
+
+<p>The final summary includes:</p>
+<ul>
+<li>Case Facts</li>
+<li>Legal Issues Raised</li>
+<li>Arguments from Both Sides</li>
+<li>The Court’s Reasoning (with citations)</li>
+<li>The Final Judgment</li>
+</ul>
+<p>In this way, students as well as lawyers can grasp the case in a brief time and in a proper manner.</p>
+
+<div class="section-title">6️⃣ Bilingual Alignment Translation</div>
+
+<p>Each English summary sentence is paired with its Hindi equivalent:</p>
+
+<div class="highlight-box">
+<b>English:</b> The court held that... <br>
+<b>Hindi:</b> न्यायालय ने यह माना कि...
+</div>
+
+<p>This supports Hindi-medium students, district court practitioners, and common citizens.</p>
+
+<div class="section-title">7️⃣ Structured JSON Output</div>
+
+<pre>{
+ "English_summary": "...",
+ "Hindi_summary": "...",
+ "citations": ["(2010) 6 SCC 1", "AIR 1995 SC 123"],
+ "sections": ["Section 302 IPC", "Article 21 Constitution"]
+}
+</pre>
+
+<div class="section-title">Historical Background</div>
+
+<p>Legal summarization in India has evolved through distinct phases over time. Each stage has contributed to how legal information is accessed, processed, and understood:</p>
+
+<table style="width:100%; border-collapse: collapse; margin-top:20px; font-size:18px;">
+<tr style="background:#e8ecff; font-weight:bold;">
+    <td style="border:1px solid #ccc; padding:10px;">Time Period</td>
+    <td style="border:1px solid #ccc; padding:10px;">Approach</td>
+    <td style="border:1px solid #ccc; padding:10px;">Limitations</td>
+</tr>
+<tr>
+    <td style="border:1px solid #ccc; padding:10px;">Pre-digital era</td>
+    <td style="border:1px solid #ccc; padding:10px;">Manual note-taking, printed digest books</td>
+    <td style="border:1px solid #ccc; padding:10px;">Time-consuming, limited access</td>
+</tr>
+<tr>
+    <td style="border:1px solid #ccc; padding:10px;">Early online era</td>
+    <td style="border:1px solid #ccc; padding:10px;">Search engines like SCC Online, Manupatra</td>
+    <td style="border:1px solid #ccc; padding:10px;">Still required reading full judgments</td>
+</tr>
+<tr>
+    <td style="border:1px solid #ccc; padding:10px;">Early AI era</td>
+    <td style="border:1px solid #ccc; padding:10px;">Generic text summarizers</td>
+    <td style="border:1px solid #ccc; padding:10px;">Could not understand legal reasoning</td>
+</tr>
+<tr>
+    <td style="border:1px solid #ccc; padding:10px;">Current era</td>
+    <td style="border:1px solid #ccc; padding:10px;">Legal-domain trained AI models (Legal-BERT, mT5)</td>
+    <td style="border:1px solid #ccc; padding:10px;">Need bilingual + citation-aware capabilities</td>
+</tr>
+</table>
+
+
+<div class="section-title">Future Scope</div>
+
+<p>In the future, this system can evolve into more advanced legal technology tools, such as:</p>
+
+<ul>
+<li>Real-time courtroom speech-to-summary assistants</li>
+<li>Automated case argument drafting support systems</li>
+<li>Law school learning automation and training tools</li>
+<li>Regional-language-based legal search engines</li>
+<li>AI-driven judicial decision support platforms</li>
+</ul>
+
+<p>We also plan to expand multilingual support to Indian regional languages such as:</p>
+
+<ul>
+<li>Bengali</li>
+<li>Marathi</li>
+<li>Tamil</li>
+<li>Urdu</li>
+<li>Kannada</li>
+<li>Malayalam</li>
+</ul>
+
+<p>This would make legal access truly democratic in India.</p>
+
+<div class="section-title">Why I Am Building This</div>
+
+
+<p>I am developing this system because:</p>
+
+<ul>
+<li><strong>Legal knowledge should not depend on language skills.</li>
+
+<li><strong>Legal research shouldn’t require hours of manual reading.</li>
+
+<li><strong>Technology should empower, not complicate law.</li>
+
+<li><strong>Students and lawyers deserve equal access to learning tools.</li>
+
+<li><strong>Citizens should understand legal decisions that impact them.</li>
+</ul>
+
+<p>This is not only a research contribution — it is an effort toward legal equality and accessibility.</p>
+
+
+<div class="section-title">Conclusion</div>
+
+<p>Legal judgments shape society — but their complexity limits accessibility. This bilingual, citation-aware summarization system transforms raw legal judgments into meaningful, structured knowledge.</p>
+
+<p>The future of legal knowledge is:</p>
+<ul>
+<li><strong>Democratic</strong></li>
+<li><strong>Intelligent</strong></li>
+<li><strong>Accessible to All</strong></li>
+</ul>
+
+<p>And this system is one step in that direction.</p>
+
+</body>
+</html>
